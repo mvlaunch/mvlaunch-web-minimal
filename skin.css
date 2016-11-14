@@ -17,20 +17,20 @@ CHANGE COLOR: The first part of this file contain all colors of this template, r
 footer .social-group i, .dropdown-menu > li > a:before, .navbar-nav > li.dropdown > a:after, .fa-li, i.icon, .counter-inverse .icon-box-cell p, .comment-list .name span, a.collapse-button:hover,
 .list-items .list-item span, .timeline > li > .timeline-label p, .btn:hover i, .progress-circle .inner-circle .main, .bootgrid-table a.btn, .mega-menu .fa-ul .fa-li, li.panel-item .fa-li,
 .fullpage-menu li.active i, .fullpage-menu li.active span, .fullpage-menu li:hover i, .fullpage-menu li:hover span, .icon-list .list-item i, .side-menu > li.active > a > i {
-    color: #56bdbd;
+    color: #ef5d3d;
 }
 
 .adv-img-classic-box .caption-inner p.sub-text, .nav-tabs > li:hover > a, .nav-tabs > li:hover > a i, .nav-tabs > li.active > a, .nav-tabs > li.active > a i, .list-group-item:not(.active):hover, .icon-menu .navbar-collapse ul.nav > li > a:hover i, header .btn-search:hover, .nav.ms-minimal > li.active > a, .icon-background.boxed-inverse:not(.bg-color) .i-background, .icon-box-cell > i, .advs-box.boxed a.btn, .advs-box.boxed a i, .dropdown.btn-group .active > a, .bootgrid-header .dropdown-item:hover, .navbar-default .navbar-nav > li > a:hover, .white .box-side-icon-small .icon-box i, .side-menu .active > a, .sidebar-nav a:hover, .sidebar-nav a:focus, .sidebar-nav a:active, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .advs-box-top-icon .icon, .advs-box-top-icon.boxed .btn, .adv-img-full-content i.main-icon, .advs-box-multiple.boxed div i, .advs-box-top-icon.boxed .circle-button, div.call-action-box a, div.call-action-box a.btn, .text-color, .boxed .circle-button:hover i, .boxed .circle-button, .tag-row i, .btn-text:hover, .btn-text:hover i, .pagination > .active > a, .pagination > li > a:hover, .datepicker-panel > ul > li:hover, .adv-img-button-content .caption i, .social-line .social-group i.circle:hover {
-    color: #56bdbd !important;
+    color: #ef5d3d !important;
 }
 
 [class*="col-md-"].boxed, .bg-color, .fa-angle-up.scroll-top, .niche-box-post.boxed .block-infos, .call-action-box, .white .img-box.adv-img-half-content .caption, .header-bootstrap {
-    background-color: #56bdbd !important;
+    background-color: #ef5d3d !important;
 }
 
 i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-base:not(.bg-cover), .timeline > li:hover > .timeline-badge, ul.side-menu li.active:before, #twosides-menu, .subline-bar,
 .accordion-list .list-group-item:before, .section-bg-color .table > tbody > tr, .advs-box-multiple div.circle, .advs-box.boxed .advs-box-content, .advs-box.boxed, .box-social-page, .advs-box-top-icon-img .icon {
-    background-color: #56bdbd;
+    background-color: #ef5d3d;
 }
 
     .section-bg-color .table > tbody > tr:hover, .section-bg-color .table-striped > tbody > tr:nth-of-type(odd), .popup-banner.full-width-top, .popup-banner.full-width-bottom, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -39,24 +39,24 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 
 .btn:hover, div.adv-img-side-content .btn:hover, div.adv-img-side-content .btn:hover i, .extra-content, .load-more-maso:hover, .nav.inner.ms-rounded li a:hover,
 .nav.inner.ms-rounded li.active a, .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
-    border-color: #56bdbd !important;
-    color: #56bdbd !important;
+    border-color: #ef5d3d !important;
+    color: #ef5d3d !important;
 }
 
 .navbar-nav > li > .dropdown-menu, .tab-box > .panel, .tab-box > .panel-box > .panel, .niche-box-team .content-box hr, hr.e, .datepicker-top-left, .datepicker-top-right {
-    border-top-color: #56bdbd !important;
+    border-top-color: #ef5d3d !important;
 }
 
 .tab-box.right .panel-box {
-    border-right-color: #56bdbd !important;
+    border-right-color: #ef5d3d !important;
 }
 
 .tab-box.left .nav-tabs, .mi-menu .sidebar-nav, .tab-box.left .panel-box {
-    border-left-color: #56bdbd !important;
+    border-left-color: #ef5d3d !important;
 }
 
 .accordion-list .list-group-item:hover, .list-items .list-item:hover, .mega-menu .nav-tabs li.active, .title-modern h2, .tab-box.inverse .panel {
-    border-bottom-color: #56bdbd !important;
+    border-bottom-color: #ef5d3d !important;
 }
 
 .section-bg-color .table > tbody > tr > td, .social-button i.circle {
@@ -2298,7 +2298,7 @@ i.text-s.circle, i.text-s.square {
 .footer-minimal .footer-title {
     font-weight: 900;
     opacity: 1;
-    color: #56bdbd;
+    color: #ef5d3d;
 }
 
 .navbar-mini .navbar-left span {
