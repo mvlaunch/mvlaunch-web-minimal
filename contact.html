@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+
+<head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Monta Vista MIT Launch</title>
+    <meta name="description" content="Contacts page with pagination in JQuery.">
+    <script src="plugins/jquery.min.2.1.4.js"></script>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/content-box.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href='css/components.css'>
+    <link rel="stylesheet" href="plugins/php/contact-form.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="skin.css">
+</head>
+<body class="full-screen-page">  
+     <div id="preloader"></div>
+    <header class="fixed-top scroll-change" data-menu-anima="fade-in">
+        <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
+            <div class="navbar navbar-main">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/mit-launch.png" alt="logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <div class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown mega-dropdown mega-tabs">
+                                   <a href="index.html" role="button">Home<span class="caret"></span></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About Us<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="about.html">Info</a></li>
+                                        <li><a href="about.html">Officer Team</a></li>
+                                    </ul>
+                                <li class="dropdown mega-dropdown mega-tabs">
+                                   <a href="faq.html" role="button">FAQ<span class="caret"></span></a>
+                                </li>
+                                <li class="dropdown mega-dropdown mega-tabs active current-active">
+                                   <a href="contact.html" role="button">Contact Us<span class="caret"></span></a>
+                                </li>
+                                <li class="dropdown mega-dropdown mega-tabs">
+                                   <a href="join.html" role="button">Join The Club <span class="caret"></span></a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+                </li>
+
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </header>
+    <div class="section-two-blocks">
+        <div class="row vertical-row">
+            <div class="col-md-6">
+                <div class="google-map full-screen-size" data-sub-height="40" data-skin="gray" data-marker-pos-top="50" data-address="New York, US" data-marker="http://templates.framework-y.com/minimal/images/marker-map.png"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="title-base text-left">
+                                <hr />
+                                <h4>CONTACT US</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <ul class="fa-ul text-normal">
+                                <li><i class="fa-li im-home-5"></i> 19TH & DOLORES ST CA 94114, UNITED STATES</li>
+                                <li><i class="fa-li im-headset"></i> (123) 0 123 455669</li>
+                                <li><i class="fa-li im-mail-3"></i> info@Minimal.com</li>
+                            </ul>
+                        </div>
+                    </div>                   
+                    <hr class="space s" />
+                    <form action="http://www.framework-y.com/plugins/php/contact-form.php" class="form-box form-ajax" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input id="name" name="name" placeholder="Name" type="text" class="form-control form-value" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input id="email" name="email" placeholder="Email" type="email" class="form-control form-value" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <hr class="space xs" />
+                                <input id="phone" name="phone" placeholder="Phone" type="text" class="form-control form-value">
+                                <hr class="space xs" />
+                                <textarea id="messagge" name="messagge" placeholder="Type here your message" class="form-control form-value" required></textarea>
+                                <hr class="space s" />
+                                <button class="anima-button circle-button btn-sm btn" type="submit"><i class="im-mail-send"></i>Send messagge</button>
+                            </div>
+                        </div>
+                        <div class="success-box">
+                            <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
+                        </div>
+                        <div class="error-box">
+                            <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-center footer-minimal footer-white">
+        <div class="content">
+            <div class="container">
+                <div class="row footer-main">
+                    <img src="images/mit-launch.png" alt="" />
+                    <hr class="space m" />
+                    <p>Bedford-Stuyvesant, Brooklyn, New York, United States</p>
+                    <p>federico@framework.com    (+05) 320 3057970    Skype fede.pixor</p>
+                    <hr class="space xs" />
+                    <div class="btn-group navbar-social">
+                        <div class="btn-group social-group">
+                            <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-instagram"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copy-row">
+                    <div class="col-md-12 copy-text">
+                        <div class="tag-row">
+                            <span>© ALL RIGHTS RESERVED</span>
+                            <span>FRAMEWORK Y</span>
+                            <span>ENVATO MARKETPLACE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='plugins/parallax.min.js'></script>
+        <link rel="stylesheet" href="plugins/iconsmind/line-icons.min.css">
+        <script async src="plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="plugins/imagesloaded.min.js"></script>
+        <script src='plugins/google.maps.min.js'></script>
+        <script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
+        <script src='plugins/jquery.tab-accordion.js'></script>
+    </footer>
+</body>
+
+<!-- Mirrored from templates.framework-y.com/minimal/demo-main/contacts-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Nov 2016 19:34:13 GMT -->
+</html>

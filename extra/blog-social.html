@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Mirrored from templates.framework-y.com/minimal/demo-main/blog-social.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Nov 2016 19:37:48 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog | Social | Minimal</title>
+    <meta name="description" content="Blog list with pagination in JQuery.">
+    <script src="../plugins/jquery.min.2.1.4.js"></script>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.css">
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/content-box.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href='../css/components.css'>
+    <link rel="stylesheet" href='../plugins/social.stream.css'>
+    <link rel="stylesheet" href='../plugins/flexslider/flexslider.css'>
+    <link rel="stylesheet" href="../theme.html">
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../skin.css"><!-- Extra optional content header -->
+</head>
+<body>
+    <div id="preloader"></div>
+    <header class="fixed-top scroll-change" data-menu-anima="fade-in">
+        <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
+            <div class="navbar navbar-main">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="../images/mit-launch.png" alt="logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <div class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown active current-active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Home <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="index.html">Home classic</a></li>
+                                        <li><a href="index-2.html">Home classic two</a></li>
+                                        <li><a href="index-3.html">Home classic three</a></li>
+                                        <li><a href="index-portfolio.html">Home portfolio</a></li>
+                                        <li><a href="index-portfolio-lightbox.html">Home portfolio lightbox</a></li>
+                                        <li><a href="index-gallery-fullpage.html">Home gallery fullpage</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Demos <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="http://templates.framework-y.com/minimal/demos/one-page-1.html">One page one</a></li>
+                                        <li><a href="http://templates.framework-y.com/minimal/demos/one-page-2.html">One page two</a></li>
+                                        <li><a href="http://templates.framework-y.com/minimal/demos/full-page-1.html">Full page one</a></li>
+                                        <li><a href="http://templates.framework-y.com/minimal/demos/full-page-2.html">Full page two</a></li>
+                                        <li><a href="http://templates.framework-y.com/minimal/demos/two-sides-1.html">Two sides one</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown mega-dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <span class="caret"></span></a>
+                                    <div class="mega-menu dropdown-menu multi-level row bg-menu">
+                                        <div class="col">
+                                            <h5>Miscellaneous</h5>
+                                            <ul class="fa-ul text-s">
+                                                <li><i class="fa-li im-file-edit"></i><a href="about-1.html">About 1</a></li>
+                                                <li><i class="fa-li im-file-edit"></i><a href="about-2.html">About 2</a></li>
+                                                <li><i class="fa-li im-file-edit"></i><a href="about-3.html">About 3</a></li>
+                                                <li><i class="fa-li im-board"></i><a href="gallery-album.html">Albums gallery</a></li>
+                                                <li><i class="fa-li im-board"></i><a href="gallery-grid.html">Grid gallery</a></li>
+                                                <li><i class="fa-li im-board"></i><a href="gallery-masonry.html">Masonry gallery</a></li>
+                                                <li><i class="fa-li im-professor"></i><a href="careers.html">Careers</a></li>
+                                                <li><i class="fa-li im-file-horizontaltext"></i><a href="certifications.html">Certifications</a></li>
+                                                <li><i class="fa-li im-support"></i><a href="faq.html">Faq</a></li>
+                                                <li><i class="fa-li im-clock-back"></i><a href="history.html">History</a></li>
+                                                <li><i class="fa-li im-business-mens"></i><a href="team.html">Team</a></li>
+                                                <li><i class="fa-li im-pie-chart3"></i><a href="reports.html">Reports</a></li>
+                                                <li><i class="fa-li im-rainbow-2"></i><a href="special-1.html">Special 1</a></li>
+                                                <li><i class="fa-li im-rainbow-2"></i><a href="special-2.html">Special 2</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Miscellaneous</h5>
+                                            <ul class="fa-ul text-s">
+                                                <li><i class="fa-li im-financial"></i><a href="pricing.html">Pricing</a></li>
+                                                <li><i class="fa-li im-error-404window"></i><a href="404.html">404</a></li>
+                                                <li><i class="fa-li im-secound2"></i><a href="coming-soon.html">Coming soon</a></li>
+                                                <li><i class="fa-li im-business-manwoman"></i><a href="partners.html">Partners</a></li>
+                                                <li><i class="fa-li im-mail-withatsign"></i><a href="contacts-1.html">Contacts 1</a></li>
+                                                <li><i class="fa-li im-mail-withatsign"></i><a href="contacts-2.html">Contacts 2</a></li>
+                                                <li><i class="fa-li im-mail-withatsign"></i><a href="contacts-3.html">Contacts 3</a></li>
+                                                <li><i class="fa-li im-mail-withatsign"></i><a href="contacts-4.html">Contacts 4</a></li>
+                                                <li><i class="fa-li im-note"></i><a href="services-1.html">Services 1</a></li>
+                                                <li><i class="fa-li im-note"></i><a href="services-2.html">Services 2</a></li>
+                                                <li><i class="fa-li im-note"></i><a href="services-3.html">Services 3</a></li>
+                                                <li><i class="fa-li im-note"></i><a href="services-4.html">Services 4</a></li>
+                                                <li><i class="fa-li im-note"></i><a href="service-single-1.html">Single service</a></li>
+                                                <li><i class="fa-li im-note"></i><a href="service-single-2.html">Single service 2</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Portfolio</h5>
+                                            <ul class="fa-ul text-s">
+                                                <li><i class="fa-li im-id-3"></i><a href="portfolio-1-gutted-boxed.html">1. Gutted boxed</a></li>
+                                                <li><i class="fa-li im-id-3"></i><a href="portfolio-1-gutted-full-width.html">1. Gutted full width</a></li>
+                                                <li><i class="fa-li im-id-3"></i><a href="portfolio-2-full-width.html">2. Full width background</a></li>
+                                                <li><i class="fa-li im-id-3"></i><a href="portfolio-2-boxed.html">2. Boxed background</a></li>
+                                                <li><i class="fa-li im-id-3"></i><a href="portfolio-2-gutted-boxed.html">2. Gutted boxed</a></li>
+                                                <li><i class="fa-li im-id-3"></i><a href="portfolio-2-gutted-full-width.html">2. Gutted full width</a></li>
+                                                <li><i class="fa-li im-id-3"></i><a href="portfolio-3-gutted-boxed.html">3. Gutted boxed</a></li>
+                                                <li><i class="fa-li im-id-3"></i><a href="portfolio-3-gutted-full-width.html">3. Gutted full width</a></li>
+                                                <li><i class="fa-li im-id-3"></i><a href="portfolio-4-gutted-boxed.html">4. Gutted boxed</a></li>
+                                                <li><i class="fa-li im-id-3"></i><a href="portfolio-4-gutted-full-width.html">4. Gutted full width</a></li>
+                                                <li><i class="fa-li im-id-card"></i><a href="portfolio-single-1.html">Portfolio single 1</a></li>
+                                                <li><i class="fa-li im-id-card"></i><a href="portfolio-single-2.html">Portfolio single 2</a></li>
+                                                <li><i class="fa-li im-id-card"></i><a href="portfolio-single-3.html">Portfolio single 3</a></li>
+                                                <li><i class="fa-li im-id-card"></i><a href="portfolio-single-4.html">Portfolio single 4</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Portfolio single</h5>
+                                            <ul class="fa-ul text-s">
+                                                <li><i class="fa-li im-id-card"></i><a href="portfolio-single-5.html">Portfolio single 5</a></li>
+                                                <li><i class="fa-li im-id-card"></i><a href="portfolio-single-6.html">Portfolio single 6</a></li>
+                                                <li><i class="fa-li im-id-card"></i><a href="portfolio-single-7.html">Portfolio single 7</a></li>
+                                            </ul>
+                                            <h5>Blog</h5>
+                                            <ul class="fa-ul text-s">
+                                                <li><i class="fa-li im-newspaper"></i><a href="blog-1.html">Blog 1</a></li>
+                                                <li><i class="fa-li im-newspaper"></i><a href="blog-2.html">Blog 2</a></li>
+                                                <li><i class="fa-li im-newspaper"></i><a href="blog-grid.html">Grid blog</a></li>
+                                                <li><i class="fa-li im-newspaper"></i><a href="blog-masonry.html">Masonry blog</a></li>
+                                                <li><i class="fa-li im-facebook"></i><a href="blog-social.html">Blog social</a></li>
+                                                <li><i class="fa-li im-notepad"></i><a href="blog-single-1.html">Blog single 1</a></li>
+                                                <li><i class="fa-li im-notepad"></i><a href="blog-single-2.html">Blog single 2</a></li>
+                                                <li><i class="fa-li im-notepad"></i><a href="blog-single-3.html">Blog single 3</a></li>
+                                                <li><i class="fa-li im-notepad"></i><a href="blog-single-4.html">Blog single 4</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown mega-dropdown mega-tabs">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features <span class="caret"></span></a>
+                                    <div class="mega-menu dropdown-menu multi-level row bg-menu">
+                                        <div class="tab-box" data-tab-anima="fade-left">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#">Components</a></li>
+                                                <li><a href="#">Headers</a></li>
+                                                <li><a href="#">Titles</a></li>
+                                            </ul>
+                                            <div class="panel active">
+                                                <div class="col">
+                                                    <h5>Components</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-posterous"></i> <a href="features/components/icons.html">Icons</a></li>
+                                                        <li><i class="fa-li im-secound"></i> <a href="features/components/counters-countdown.html">Counters</a></li>
+                                                        <li><i class="fa-li im-clock-back"></i> <a href="features/components/counters-countdown.html">Countdowns</a></li>
+                                                        <li><i class="fa-li im-vector"></i> <a href="features/components/progress-bars.html">Progress bars</a></li>
+                                                        <li><i class="fa-li im-arrow-refresh2"></i> <a href="features/components/progress-bars.html">Circle progress bars</a></li>
+                                                        <li><i class="fa-li im-calendar-4"></i> <a href="features/components/timeline.html">Timeline</a></li>
+                                                        <li><i class="fa-li im-map2"></i> <a href="features/components/maps.html">Google maps</a></li>
+                                                        <li><i class="fa-li im-split-horizontal2window"></i> <a href="features/components/tables.html">Advanced table</a></li>
+                                                        <li><i class="fa-li im-speach-bubbles"></i> <a href="features/components/php-contact-form.html">Contact form</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <h5>Main components</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-hand-touch"></i> <a href="features/components/buttons.html">Buttons</a></li>
+                                                        <li><i class="fa-li im-old-camera"></i> <a href="features/components/image-boxes.html">Image boxes</a></li>
+                                                        <li><i class="fa-li im-old-camera"></i> <a href="features/components/image-boxes-advanced.html">Advanced image boxes</a></li>
+                                                        <li><i class="fa-li im-id-2"></i> <a href="features/components/content-box.html">Content boxes</a></li>
+                                                        <li><i class="fa-li im-facebook"></i> <a href="features/components/social-media.html">Social media</a></li>
+                                                        <li><i class="fa-li im-numbering-list"></i> <a href="features/components/lists.html">Lists</a></li>
+                                                        <li><i class="fa-li im-bold-text"></i> <a href="features/components/typography.html">Typography</a></li>
+                                                        <li><i class="fa-li im-split-foursquarewindow"></i> <a href="features/containers/list-grid.html">Grid</a></li>
+                                                        <li><i class="fa-li im-split-foursquarewindow"></i> <a href="features/containers/list-masonry.html">Masonry</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <h5>Containers</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-maximize"></i> <a href="features/containers/lightbox.html">Lightbox and popups</a></li>
+                                                        <li><i class="fa-li im-arrow-outside"></i> <a href="features/containers/sliders.html">Sliders and carousels</a></li>
+                                                        <li><i class="fa-li im-scroll-fast"></i> <a href="features/containers/scroll-box-collapse.html">Scroll box</a></li>
+                                                        <li><i class="fa-li im-download-2"></i> <a href="features/containers/scroll-box-collapse.html">Collapse box</a></li>
+                                                        <li><i class="fa-li im-new-tab"></i> <a href="features/containers/tabs.html">Tabs</a></li>
+                                                        <li><i class="fa-li im-new-tab"></i> <a href="features/containers/accordions.html">Accordions</a></li>
+                                                        <li><i class="fa-li im-go-bottom"></i> <a href="features/footers/footer-parallax.html">Footer parallax</a></li>
+                                                        <li><i class="fa-li im-go-bottom"></i> <a href="features/footers/footer-minimal.html">Footer minimal</a></li>
+                                                        <li><i class="fa-li im-go-bottom"></i> <a href="features/footers/footer-base.html">Footer base</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <h5>Sections</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-panorama"></i> <a href="features/containers/section-background-image.html">Background image</a></li>
+                                                        <li><i class="fa-li im-panorama"></i> <a href="features/containers/section-background-image-parallax.html">Background parallax</a></li>
+                                                        <li><i class="fa-li im-arrow-outside"></i> <a href="features/containers/section-slider.html">Slider</a></li>
+                                                        <li><i class="fa-li im-film-strip"></i> <a href="features/containers/section-background-video.html">Background video</a></li>
+                                                        <li><i class="fa-li im-clouds"></i> <a href="features/containers/section-animations.html">Bg animations</a></li>
+                                                        <li><i class="fa-li im-clouds"></i> <a href="features/containers/section-animations-parallax.html">Bg animations parallax</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="col">
+                                                    <h5>Horizontal menus</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-road"></i> <a href="features/menus/menu-classic.html">Menu classic</a></li>
+                                                        <li><i class="fa-li im-road"></i> <a href="features/menus/menu-classic-transparent.html">Menu classic transparent</a></li>
+                                                        <li><i class="fa-li im-road"></i> <a href="features/menus/menu-big-logo.html">Menu big logo</a></li>
+                                                        <li><i class="fa-li im-road"></i> <a href="features/menus/menu-subline.html">Menu subline</a></li>
+                                                        <li><i class="fa-li im-road"></i> <a href="features/menus/menu-subtitle.html">Menu subtitle</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <h5>Horizontal menus</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-road"></i> <a href="features/menus/menu-middle-logo.html">Menu middle logo</a></li>
+                                                        <li><i class="fa-li im-road"></i> <a href="features/menus/menu-middle-logo-top.html">Menu middle logo top</a></li>
+                                                        <li><i class="fa-li im-road"></i> <a href="features/menus/menu-middle-box.html">Menu middle box</a></li>
+                                                        <li><i class="fa-li im-road"></i> <a href="features/menus/menu-icons.html">Menu icons</a></li>
+                                                        <li><i class="fa-li im-road"></i> <a href="features/menus/menu-icons-top.html">Menu icons top</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <h5>Side menus</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-road-2"></i> <a href="features/menus/menu-side.html">Side classic</a></li>
+                                                        <li><i class="fa-li im-road-2"></i> <a href="features/menus/menu-side-lateral.html">Side lateral</a></li>
+                                                        <li><i class="fa-li im-road-2"></i> <a href="features/menus/menu-side-simple.html">Side simple</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="col">
+                                                    <h5>Image background</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-old-camera"></i> <a href="features/titles/template-title-image.html">Image background</a></li>
+                                                        <li><i class="fa-li im-old-camera"></i> <a href="features/titles/template-title-image-fullscreen.html">Image full-screen</a></li>
+                                                        <li><i class="fa-li im-old-camera"></i> <a href="features/titles/template-title-image-fullscreen-parallax.html">Image full-screen parallax</a></li>
+                                                        <li><i class="fa-li im-old-camera"></i> <a href="features/titles/template-title-image-parallax.html">Image parallax</a></li>
+                                                        <li><i class="fa-li im-old-camera"></i> <a href="features/titles/template-title-image-parallax-ken-burn.html">Image parallax ken-burn</a></li>
+                                                    </ul>
+                                                    <hr class="space xs">
+                                                    <h5>Base titles</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-panorama"></i> <a href="features/titles/template-title-base-1.html">Title base 1</a></li>
+                                                        <li><i class="fa-li im-panorama"></i> <a href="features/titles/template-title-base-2.html">Title base 2</a></li>
+                                                        <li><i class="fa-li im-panorama"></i> <a href="features/titles/template-title-bootstrap.html">Title bootstrap</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <h5>Video background</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-film-board"></i> <a href="features/titles/template-title-video-mp4.html">Video background MP4</a></li>
+                                                        <li><i class="fa-li im-film-board"></i> <a href="features/titles/template-title-video-youtube.html">Video background Youtube</a></li>
+                                                        <li><i class="fa-li im-film-board"></i> <a href="features/titles/template-title-video-fullscreen.html">Video full-screen</a></li>
+                                                        <li><i class="fa-li im-film-board"></i> <a href="features/titles/template-title-video-fullscreen-parallax.html">Video full-screen parallax</a></li>
+                                                        <li><i class="fa-li im-film-board"></i> <a href="features/titles/template-title-video-parallax.html">Video parallax</a></li>
+                                                    </ul>
+                                                    <hr class="space xs">
+                                                    <h5>Animation background</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-clouds"></i> <a href="features/titles/template-title-animation.html">Animation background</a></li>
+                                                        <li><i class="fa-li im-clouds"></i> <a href="features/titles/template-title-animation-parallax.html">Animation parallax</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <h5>Slider background</h5>
+                                                    <ul class="fa-ul text-s">
+                                                        <li><i class="fa-li im-arrow-outside"></i> <a href="features/titles/template-title-slider.html">Slider background</a></li>
+                                                        <li><i class="fa-li im-arrow-outside"></i> <a href="features/titles/template-title-slider-fullscreen.html">Slider full-screen</a></li>
+                                                        <li><i class="fa-li im-arrow-outside"></i> <a href="features/titles/template-title-slider-fullscreen-parallax.html">Slider full-screen parallax</a></li>
+                                                        <li><i class="fa-li im-arrow-outside"></i> <a href="features/titles/template-title-slider-parallax.html">Slider parallax</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn-group navbar-left navbar-social">
+                                <div class="btn-group social-group">
+                                    <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                                    <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-title white ken-burn-center" data-parallax="scroll" data-position="top" data-image-src="../images/long-4.jpg" data-natural-width="1920" data-natural-height="600">
+        <div class="container">
+            <div class="title-base">
+                <hr class="anima" />
+                <h1>Real time social news</h1>
+                <p>News and interesting news from our world.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section-empty blog-social">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box-social-page box-social-bl">
+                        <div class="icon-box">
+                            <div class="icon-box-cell">
+                                <i class="im-newspaper text-xl"></i>
+                            </div>
+                            <div class="icon-box-cell">
+                                <label class="text-m">Our blog</label>
+                                <p class="text-xs">News from our staff</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-social-page box-social-fb">
+                        <div class="icon-box">
+                            <div class="icon-box-cell">
+                                <i class="im-facebook text-xl"></i>
+                            </div>
+                            <div class="icon-box-cell">
+                                <label class="text-m">Facebook</label>
+                                <p class="text-xs"><a class="white" href="https://www.facebook.com/envato/" target="_blank" rel="nofollow">/envato</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-social-page box-social-tw">
+                        <div class="icon-box">
+                            <div class="icon-box-cell">
+                                <i class="im-twitter text-xl"></i>
+                            </div>
+                            <div class="icon-box-cell">
+                                <label class="text-m">Twitter</label>
+                                <p class="text-xs"><a class="white" href="https://twitter.com/envato" target="_blank" rel="nofollow">@envato</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="grid-list">
+                        <div class="grid-box">
+                            <div class="grid-item">
+                                <div class="advs-box niche-box-blog">
+                                    <div class="block-top">
+                                        <div class="block-infos">
+                                            <div class="block-data">
+                                                <p class="bd-day">25</p>
+                                                <p class="bd-month">July 2015</p>
+                                            </div>
+                                            <a class="block-comment" href="#">2 <i class="fa fa-comment-o"></i></a>
+                                        </div>
+                                        <div class="block-title">
+                                            <h2><a href="#">Jeremy St.3TH Festival</a></h2>
+                                            <div class="tag-row">
+                                                <span><i class="fa fa-bookmark"></i> <a href="#">Travel</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="img-box img-scale-up" href="#">
+                                        <img src="../images/blog/news-1.jpg" alt="">
+                                    </a>
+                                    <p class="excerpt">
+                                        L'orem ipsum dolor, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error
+                                        sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqueipsa
+                                        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </p>
+                                    <a class="btn btn-sm" href="#">Read more</a>
+                                </div>
+                                <hr class="space m" />
+                            </div>
+                            <div class="grid-item">
+                                <div class="advs-box niche-box-blog">
+                                    <div class="block-top">
+                                        <div class="block-infos">
+                                            <div class="block-data">
+                                                <p class="bd-day">25</p>
+                                                <p class="bd-month">July 2015</p>
+                                            </div>
+                                            <a class="block-comment" href="#">2 <i class="fa fa-comment-o"></i></a>
+                                        </div>
+                                        <div class="block-title">
+                                            <h2><a href="#">Elvis on New York Theater</a></h2>
+                                            <div class="tag-row">
+                                                <span><i class="fa fa-bookmark"></i> <a href="#">Travel</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flexslider slider nav-inner">
+                                        <ul class="slides">
+                                            <li>
+                                                <img src="../images/blog/news-2.jpg" alt="" />
+                                            </li>
+                                            <li>
+                                                <img src="../images/blog/news-3.jpg" alt="" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="excerpt">
+                                        L'orem ipsum dolor, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error
+                                        sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqueipsa
+                                        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </p>
+                                    <a class="btn btn-sm" href="#">Read more</a>
+                                </div>
+                                <hr class="space m" />
+                            </div>
+                            <div class="grid-item">
+                                <div class="advs-box niche-box-blog">
+                                    <div class="block-top">
+                                        <div class="block-infos">
+                                            <div class="block-data">
+                                                <p class="bd-day">25</p>
+                                                <p class="bd-month">July 2015</p>
+                                            </div>
+                                            <a class="block-comment" href="#">2 <i class="fa fa-comment-o"></i></a>
+                                        </div>
+                                        <div class="block-title">
+                                            <h2><a href="#">The new eco-system of nature</a></h2>
+                                            <div class="tag-row">
+                                                <span><i class="fa fa-bookmark"></i> <a href="#">Travel</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <iframe src="https://www.youtube.com/embed/bpqhStV2_rc?showinfo=0&amp;controls=0"></iframe>
+                                    <p class="excerpt">
+                                        L'orem ipsum dolor, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error
+                                        sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqueipsa
+                                        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </p>
+                                    <a class="btn btn-sm" href="#">Read more</a>
+                                </div>
+                                <hr class="space m" />
+                            </div>
+                            <div class="grid-item">
+                                <div class="advs-box niche-box-blog">
+                                    <div class="block-top">
+                                        <div class="block-infos">
+                                            <div class="block-data">
+                                                <p class="bd-day">25</p>
+                                                <p class="bd-month">July 2015</p>
+                                            </div>
+                                            <a class="block-comment" href="#">2 <i class="fa fa-comment-o"></i></a>
+                                        </div>
+                                        <div class="block-title">
+                                            <h2><a href="#">Future and past of tecnology</a></h2>
+                                            <div class="tag-row">
+                                                <span><i class="fa fa-bookmark"></i> <a href="#">Travel</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="img-box img-scale-up" href="#">
+                                        <img src="../images/blog/news-4.jpg" alt="">
+                                    </a>
+                                    <p class="excerpt">
+                                        L'orem ipsum dolor, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error
+                                        sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqueipsa
+                                        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </p>
+                                    <a class="btn btn-sm" href="#">Read more</a>
+                                </div>
+                                <hr class="space m" />
+                            </div>
+                            <div class="grid-item">
+                                <div class="advs-box niche-box-blog">
+                                    <div class="block-top">
+                                        <div class="block-infos">
+                                            <div class="block-data">
+                                                <p class="bd-day">25</p>
+                                                <p class="bd-month">July 2015</p>
+                                            </div>
+                                            <a class="block-comment" href="#">2 <i class="fa fa-comment-o"></i></a>
+                                        </div>
+                                        <div class="block-title">
+                                            <h2><a href="#">Elvis on New York Theater</a></h2>
+                                            <div class="tag-row">
+                                                <span><i class="fa fa-bookmark"></i> <a href="#">Travel</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="img-box img-scale-up" href="#">
+                                        <img src="../images/blog/news-5.jpg" alt="">
+                                    </a>
+                                    <p class="excerpt">
+                                        L'orem ipsum dolor, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error
+                                        sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqueipsa
+                                        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </p>
+                                    <a class="btn btn-sm" href="#">Read more</a>
+                                </div>
+                                <hr class="space m" />
+                            </div>
+                            <ul class="pagination pagination-grid hide-first-last" data-page-items="2" data-pagination-anima="show-scale" data-options="scrollTop:true"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-feed-fb no-comments" data-social-id="80655071208" data-options="limit:3"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-feed-tw" data-social-id="envato" data-options="limit:10"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <footer class="footer-center footer-minimal">
+        <div class="content">
+            <div class="container">
+                <div class="row footer-main">
+                    <img src="../images/mit-launch.png" alt="" />
+                    <hr class="space m" />
+                    <p>Bedford-Stuyvesant, Brooklyn, New York, United States</p>
+                    <p>federico@framework.com    (+05) 320 3057970    Skype fede.pixor</p>
+                    <hr class="space xs" />
+                    <div class="btn-group navbar-social">
+                        <div class="btn-group social-group">
+                            <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-instagram"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copy-row">
+                    <div class="col-md-12 copy-text">
+                        <div class="tag-row">
+                            <span>© ALL RIGHTS RESERVED</span>
+                            <span>FRAMEWORK Y</span>
+                            <span>ENVATO MARKETPLACE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='../plugins/parallax.min.js'></script>
+        <link rel="stylesheet" href="../plugins/iconsmind/line-icons.min.css">
+        <script async src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../plugins/imagesloaded.min.js"></script>
+        <script src='../plugins/flexslider/jquery.flexslider-min.js'></script>
+        <script src='../plugins/jquery.twbsPagination.min.js'></script>
+        <script src='../plugins/social.stream.min.js'></script>
+        <script src='../plugins/jquery.tab-accordion.js'></script>
+    </footer>
+</body>
+
+<!-- Mirrored from templates.framework-y.com/minimal/demo-main/blog-social.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Nov 2016 19:37:48 GMT -->
+</html>
