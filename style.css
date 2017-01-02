@@ -4326,6 +4326,11 @@ TITLE BASE
     font-weight: 900;
 }
 
+.text-main
+{
+  font-family: "Raleway"; !important
+}
+
 .mediumcustom {
     width: 50%;
 }
